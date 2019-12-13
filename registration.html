@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="styles/nysl_3_1.css">
+      <title>Registration Form</title>
+   </head>
+   <body style="background-color:ivory;">
+      <!-- <form action="show_data.html" method="GET"> -->
+      <form action="thanks.html">
+         <h1 class="reg-an">Registration Form</h1>
+         <p>Please fill in this form to create an account.</p>
+         <div class="container">
+            <label for="fname">First Name: </label> 
+            <input  name="first_name" type="text" id="fname" /> 
+         </div>
+         <div class="container">
+            <label for="lname">Last Name:</label> 
+            <input  name="last_name" type="text" id="lname" />
+         </div>
+         <div class="container">
+            <label for="streetadd">Street Address:</label> 
+            <input  name="street_add" type="text" id="streetadd"  />
+         </div>
+         <div class="container">
+            <label for="city">City:</label> 
+            <input  name="city" type="text" id="city" />
+         </div>
+         <div class="container">
+            <label for="z-code">Zip Code:</label> 
+            <input  name="zip_code" type="text" id="z-code" />
+         </div>
+         <div class="container">
+            <label for="b-date">Birth Date:</label> 
+            <input  name="b_date" type="date" id="b-date" />
+         </div>
+         <div class="container">
+            <label for="par-gar">Parent/Guardian:</label> 
+            <input  name="par_gar" type="text" id="par-gar" />
+         </div>
+         <div class="container">
+            <label for="con-ph">Contact Phone:</label> 
+            <input  name="con_ph" type="tel" id="con-ph" />
+         </div>
+         <div class="container">
+            <label for="email">Email:</label> 
+            <input  name="email" type="email" id="email" />
+         </div>
+         <div class="container">
+            <label >Gender:</label>
+            <div class="con-radio">
+               <input type="radio" name="gender" value="Male" class="radvalue"> Male
+               <input type="radio" name="gender" value="Female" class="radvalue"> Female
+            </div>
+         </div>
+         <div class="container">
+            <label>Please choose your closest school and second closest school.</label>
+            <select  multiple name="closest-school"  >
+               <option value="aj-katzenmaier-elementary">AJ Katzenmaier Elementary</option>
+               <option value="greenbay-elementary">Greenbay Elementary</option>
+               <option value="howard-a-yeager-elementary">Howard A Yeager Elementary</option>
+               <option value="marjorie-p-hart-elementary">Marjorie P Hart Elementary</option>
+               <option value="north-elementary">North Elementary</option>
+               <option value="south-elementary">South Elementary</option>
+            </select>
+         </div>
+         <div class="container1">
+            <label> Would you like to be added to our mailing list?</label>
+            <input type="radio" name="mailing_list" value="yes" checked="checked"> Yes 
+            <input type="radio" name="mailing_list" value="no"> No
+         </div>
+         <div class="container1 ">
+            <label> What is your favourite time to play football ?</label>
+            <input type="checkbox" name="favourite_time" value="morning"> Mornings
+            <input type="checkbox" name="favourite_time" value="afternoon"> Afternoons
+            <input type="checkbox" name="favourite_time" value="weekends"> Weekends
+         </div>
+         <div class="btn">
+            <button type="submit" class="registerbtn">Submit</button>
+            <input type="button" value="Back" onclick="location.href='home.html'" class="registerbtn">
+         </div>
+      </form>
+   </body>
+</html>
